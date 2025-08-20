@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CinemaHub - Discover and explore your favorite movies">
+    <title>CinemaHub - Movie Discovery Platform</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1>🎬 CinemaHub</h1>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#movies" class="nav-link">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#genres" class="nav-link">Genres</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                </ul>
+
+                <div class="nav-search">
+                    <input type="search" id="searchInput" placeholder="Search movies..." class="search-input">
+                    <button class="search-btn">🔍</button>
+                </div>
+
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <article class="hero-text">
+                    <h2 class="hero-title">Discover Amazing Movies</h2>
+                    <p class="hero-description">
+                        Explore thousands of movies from different genres. 
+                        Find your next favorite film with CinemaHub.
+                    </p>
+                    <button class="hero-btn">Explore Now</button>
+                </article>
+                <article class="hero-image">
+                    <div class="featured-movie">
+                        <img src="assets/Spiderman.jpg" alt="Featured Movie" class="featured-poster">
+                        <div class="movie-info">
+                            <h3>Spider-Man: No Way Home</h3>
+                            <div class="movie-meta">
+                                <span class="rating">⭐ 8.2</span>
+                                <span class="year">2021</span>
+                                <span class="genre">Action</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Filter Section -->
+        <section class="filter-section">
+            <div class="container">
+                <div class="filter-controls">
+                    <h2>Browse Movies</h2>
+                    <div class="filter-dropdown">
+                        <select id="genreFilter" class="genre-select">
+                            <option value="all">All Genres</option>
+                            <option value="action">Action</option>
+                            <option value="drama">Drama</option>
+                            <option value="comedy">Comedy</option>
+                            <option value="sci-fi">Sci-Fi</option>
+                            <option value="horror">Horror</option>
+                            <option value="romance">Romance</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Movies Grid Section -->
+        <section id="movies" class="movies-section">
+            <div class="container">
+                <div class="movies-grid" id="moviesGrid">
+                    <!-- Movies akan di-generate oleh JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Aside Section with Image -->
+        <aside class="sidebar-section">
+            <div class="container">
+                <div class="sidebar-content">
+                    <h3>Movie of the Month</h3>
+                    <img src="assets/Spiderman.jpg" alt="Spider-Man No Way Home - Movie of the Month" class="featured-sidebar-image">
+                    <h4>Spider-Man: No Way Home</h4>
+                    <p>Experience the multiverse like never before. Peter Parker's identity is revealed, bringing his Spider-Man responsibilities into conflict with his normal life.</p>
+                    <div class="sidebar-meta">
+                        <span class="rating">⭐ 8.2</span>
+                        <span class="year">2021</span>
+                        <span class="duration">148 min</span>
+                    </div>
+                    <button class="sidebar-btn">Watch Now</button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Trending Section dengan Slider -->
+        <section class="trending-section">
+            <div class="container">
+                <h2 class="section-title">Trending This Week</h2>
+                <div class="slider-container">
+                    <button class="slider-btn prev-btn" id="prevBtn">‹</button>
+                    <div class="slider-wrapper">
+                        <div class="slider-track" id="sliderTrack">
+                            <!-- Trending movies akan di-generate oleh JavaScript -->
+                        </div>
+                    </div>
+                    <button class="slider-btn next-btn" id="nextBtn">›</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <article class="about-content">
+                    <h2>About CinemaHub</h2>
+                    <p>
+                        CinemaHub is your ultimate destination for discovering amazing movies. 
+                        Our platform provides detailed information about thousands of films, 
+                        helping you find your next favorite movie experience.
+                    </p>
+                    <div class="features">
+                        <article class="feature">
+                            <span class="feature-icon">🎭</span>
+                            <h3>Diverse Genres</h3>
+                            <p>Explore movies from all genres and categories</p>
+                        </article>
+                        <article class="feature">
+                            <span class="feature-icon">⭐</span>
+                            <h3>Ratings & Reviews</h3>
+                            <p>See ratings and reviews from movie enthusiasts</p>
+                        </article>
+                        <article class="feature">
+                            <span class="feature-icon">🔍</span>
+                            <h3>Smart Search</h3>
+                            <p>Find movies quickly with our advanced search</p>
+                        </article>
+                        <article class="feature">
+                            <span class="feature-icon">🎥</span>
+                            <h3>HD Quality</h3>
+                            <p>Experience cinema with high-definition movie content</p>
+                        </article>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🎬 CinemaHub</h3>
+                    <p>Discover amazing movies and explore cinema like never before.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#movies">Movies</a></li>
+                        <li><a href="#genres">Genres</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CinemaHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Movie Modal -->
+    <div id="movieModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-body">
+                <img id="modalPoster" src="" alt="Movie Poster" class="modal-poster">
+                <div class="modal-info">
+                    <h2 id="modalTitle"></h2>
+                    <div class="modal-meta">
+                        <span id="modalRating" class="rating"></span>
+                        <span id="modalYear" class="year"></span>
+                        <span id="modalGenre" class="genre"></span>
+                    </div>
+                    <p id="modalDescription" class="modal-description"></p>
+                    <button class="watch-btn">Watch Trailer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
