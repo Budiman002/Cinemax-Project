@@ -33,10 +33,14 @@ python -m http.server 8000
 
 ```
 cinemahub/
-├── index.html
-├── css/style.css
-├── js/script.js
-└── README.md
+├── index.html              # Main HTML file
+├── css/
+│   └── style.css          # Styles & responsive design
+├── js/
+│   └── script.js          # Interactive functionality
+├── assets/
+│   └── images/            # Local images
+└── README.md              # Documentation
 ```
 
 ## Browser Support
